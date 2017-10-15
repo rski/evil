@@ -153,11 +153,7 @@ with `M-x evil-tests-run'"))
       "[l]ine1\nline2\nline3\nline4\nline5\n"
       (":2,4copy2")
       "line1\nline2\nline2\nline3\n[l]ine4\nline3\nline4\nline5\n"))
-  (ert-info ("Copy to current line")
-    (evil-test-buffer
-      "line1\nline2\nline3\nli[n]e4\nline5\n"
-      (":2,4copy.")
-      "line1\nline2\nline3\nline4\nline2\nline3\n[l]ine4\nline5\n")))
+)
 
 (provide 'evil-tests)
 
