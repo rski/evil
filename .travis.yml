@@ -15,11 +15,7 @@ before_install:
 
 env:
   matrix:
-    - EVM_EMACS=emacs-24.3-travis
-    - EVM_EMACS=emacs-24.4-travis
-    - EVM_EMACS=emacs-24.5-travis
     - EVM_EMACS=emacs-25.1-travis
-    - EVM_EMACS=emacs-git-snapshot-travis
 
 # FIXME: Emacs 25.1 segfaults when running make test.
 matrix:
@@ -29,4 +25,14 @@ matrix:
 
 script:
   - emacs --version
+  - make test
+  - make test
+  - make test
+  - make test
+  - make test
+  - make test
+  - make test
+  - make test
+  - make test
+  - make test
   - make test
